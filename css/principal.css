@@ -564,6 +564,25 @@ height: 100%;
         width: 90px;
         font-size: 20px;
     }
+    .contenedorSection{
+        flex-flow: column;
+        margin: 0px;
+        padding: 50px 10px;
+    }
+    .panelRight{
+        justify-content: center;
+    }
+    .textFrase{
+        font-size: 25px;
+    }
+    .colorPie{
+        padding: 10px;
+    }
+    .informacion{
+        width: 230px;
+        margin: 0px 5px;
+        font-size: 13px;
+    }
 }
 
 
