@@ -374,8 +374,8 @@ height: 100%;
 }
 .servicios{
     display: flex;
-    width: 1300px;
-    margin:50px 0px 50px calc((100% - 1300px) * 0.5);
+    width: 1349px;
+    margin:50px 0px 50px calc((100% - 1349px) * 0.5);
     padding: 20px 90px 20px 90px;
     flex-flow: column;
     /* background: red; */
@@ -572,6 +572,9 @@ height: 100%;
     }
     .textFrase{
         font-size: 25px;
+    }
+    .servicios{
+        padding: 0px;
     }
     .colorPie{
         padding: 10px;
