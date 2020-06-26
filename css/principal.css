@@ -56,6 +56,20 @@ a{
         justify-content: center;
     }
 
+    .nav-enlace{
+        /* display: flex; */
+        /* background: salmon; */
+        color: #ffff;
+        /* padding: 10px 30px;  */
+    }
+
+    .nav-boton{
+        /* background: salmon; */
+        /* color: #ffff; */
+        padding: 10px 0px;
+        /* border: 2px solid #fff; */
+        display: none;
+    }
     /* ---------------------------------- */
     .logo{
         flex: 1 1 auto;
@@ -467,7 +481,7 @@ height: 100%;
 .colorPie{
     background-color: rgba(0, 0, 0, .3);
     width: 100%;
-    padding: 60px;
+    padding: 100px 60px 100px 60px;
     flex-flow: row wrap;
     display: flex;
     margin:0px 0px 0px calc((100% - 100%) * 0.5);
@@ -502,6 +516,22 @@ height: 100%;
 }
 .pieSocial{
     padding-top: 20px;
+}
+.piePagina{
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+}
+.piecuadro{
+    height: 150px; 
+    /* background: gray; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    line-height: 1em;
 }
 /* footer informacion de estableciminento termina */
 
@@ -577,12 +607,55 @@ height: 100%;
         padding: 0px;
     }
     .colorPie{
-        padding: 10px;
+        padding: 80px 10px 80px 10px;
     }
     .informacion{
-        width: 230px;
+        width: 260px;
         margin: 0px 5px;
-        font-size: 13px;
+        /* font-size: 13px; */
+    }
+}
+@media screen and (max-width:839px){
+    .colorPie{
+        padding: 80px 30px 80px 30px;
+    }
+    .informacion{
+        margin: 20px 50px;
+        display: flex;
+        flex-flow: column;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:699px){
+    .subMenu{
+        margin: 10px;
+        height: 80px;
+        display: flex;
+        flex-flow: column;
+        background-color: rgba(0, 0, 0, .8);
+    }
+    .nav {
+        background-color: rgba(0, 0, 0, .3);
+        flex-flow: column;
+        width: 100%;
+        position: relative;
+    }
+    .nav-enlace{
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .nav-boton{
+        display: inline-block;
+        margin: 10px;
+    }
+    .desaparece{
+        display: none;
     }
 }
 
