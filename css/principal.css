@@ -478,7 +478,7 @@ height: 100%;
 }
 .informacion{
     width: 300px;
-    height: 400px;
+    height: 450px;
     margin: 0px 20px;
     background-color: rgba(31, 31, 31);
     color: rgba(255, 255, 255);
@@ -498,9 +498,12 @@ height: 100%;
     line-height: 1.8em;
 }
 .linea{
-    border-bottom: 2.5px solid rgba(195, 157, 99);
+    border-bottom: 2px solid rgba(195, 157, 99);
     padding: 0px 40px;
     padding-bottom: 20px;
+}
+.pieSocial{
+    padding-top: 20px;
 }
 /* footer informacion de estableciminento termina */
 
