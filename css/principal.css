@@ -1,0 +1,512 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'MedievalSharp', cursive; */
+    font-family: 'Comfortaa', cursive;
+    /* padding-top: 40px; */
+    transition: padding-top 0.5s ease;
+}
+a{
+    text-decoration: none;
+}
+.padre{
+    /* background: #000000; */
+    display: flex;
+    flex-flow: column nowrap;
+}
+.margen-interno{
+    padding: 0px 50px;
+}
+
+/* encabezado de pagina web */
+.header{
+    /* background: url(../imagenes/1.jpg); */
+    /* padding: 20px; */
+    background: #ffffff ;  
+    background-position: center;
+    background-attachment:fixed ;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+}   
+    .Hlogo{
+        /* background: rgba(0, 0, 0, .3); color de fondo con transparencia */
+        display: flex;
+        flex-flow: row nowrap;
+        height: 100px;
+        align-items: center;
+        text-align: center;
+       
+    }
+    .subMenu{
+        /* background: black; */
+        display: flex;
+        flex-flow: row wrap;
+        height: 55px;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        margin-top: 20px;
+        padding: 0px auto;
+        justify-content: center;
+    }
+
+    /* ---------------------------------- */
+    .logo{
+        flex: 1 1 auto;
+        padding-bottom: 10px;
+        /* transition: all 0.5s ease; */
+    }   
+    
+    .logo img{
+        height: 60px;
+        transition: all 0.3s ease;
+    }
+    .logo img:hover{
+        color: #235379;
+    }
+
+/* Efecto de desaparacion en imagen logo */
+body.sticky-header{
+    /* padding-top: 40px ;     */
+}
+body.sticky-header .Hlogo{
+    /* height: 30px; */
+    background: #ffffff;
+    
+}
+body.sticky-header .logo img{
+    transform: scale(0.0);
+ }
+    /* ------------------------------------- */
+        .social{
+            /* background: #000000; */
+            flex: 0 0 auto;
+            display: flex;
+            align-items: center;
+            padding: 0 40px;
+            /* border-right: 1px solid rgba(0, 0, 0, .1); */
+        }
+            .social a{
+                font-size: 18px;
+                color: gray;
+                padding: 0 10px;
+                transition: color 1.5s ease 0s;
+            }
+            .social a:hover{
+                color: rgba(148, 1, 11);
+            }
+
+    /* encabezado de menu */
+    /* ------------------------------------- */
+        .nav{
+            flex: 0 0 auto;
+            align-items: center;
+            /* background: #000; */
+        }
+            .nav a{
+                color: grey;
+                font-size: 13px;
+                text-transform: uppercase;
+                /* position: static; */
+                padding-bottom: 5px;
+                margin: 0 40px;
+                letter-spacing: 1px;
+                transition:  color 0.4s ease 0s;
+                font-weight: bold;
+            }
+            .nav a:hover{
+                color: rgba(148, 1, 11);
+                transition:  color 0.4s ease 0s;
+            }
+/* aqui termina los diseños de la cabecera  */
+
+/* Comienzo de la parte de section */
+.section{
+    /* background: #000; */
+    display: inline-block;
+    flex: 0  0 auto;
+    flex-direction: column;
+}
+
+/* ----------Animaciones y propiedades de imagenes slider------- */
+.marcoSlider{
+    /* background: #235379; */
+    margin:20px 0px 25px calc((100% - 1349px) * 0.5);
+    display: flex;
+    flex: 0 0 auto;
+    width: 1349px;
+    height: 645px;
+    position: relative;
+    overflow: hidden;
+}
+.slider{
+/* background: #000; */
+overflow: hidden;
+text-align: center;
+width: 100%;
+height: 100%;
+}
+    .slider ul{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        /* animation: cambio 20s infinite alternate ease; */
+        position: absolute;
+    }
+    .slider li, ul{
+        width: 100%;
+        list-style: none;
+    }
+    .slider img{
+        /* transition: all 0.5s ease; */
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover; */
+        cursor: pointer;
+    }
+    .slider img:hover{
+        /* transform: scale(0.9); */
+    }
+    .paginacion{
+        list-style: none;
+        position: absolute;
+        color: black;
+        top: 85%;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 80;
+    }   
+    .paginacion li{
+        font-size: 15px;
+        margin: 2px 5px; 
+        color: rgba(0, 0, 0, .5);
+        cursor: pointer;
+    }
+    .left span, .right span{
+        /* background-color: #ffffff; */
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .left, .right{
+        cursor: pointer;
+        position: absolute;
+        height: 100%;
+        width: 120px;
+        margin-bottom: 100px;
+        /* border: 1px solid; */
+        transition: all 0.5s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(0, 0, 0, .5);
+        font-size: 35px;
+    }
+    .left{
+        /* left: 10px; */   
+    }
+    .right{
+        right: -1px;
+    }
+    .right:hover{
+        color: rgba(255, 255, 255, .9);
+        background:rgba(0, 0, 0, .1);
+    }
+    .left:hover{
+        color: rgba(255, 255, 255, .9);
+        background:rgba(0, 0, 0, .1);
+    }
+    .paginacion span:hover{
+        color: rgb(0, 0, 0);
+    }
+
+
+/* Slider de imagenes menores para mostrario comienzo */
+.marcoSliderMini{
+    /* background: #159265; */
+    flex: 0 0 auto;
+    margin:0px 0px 25px calc((100% - 1300px) * 0.5);
+    display: flex;
+    width: 1300px;
+    height: 145px;
+    position: relative;
+    overflow: hidden;
+}
+.slidesMini{
+/* background: #000; */
+overflow: hidden;
+text-align: center;
+width: 100%;
+height: 100%;
+}
+.textVendida{
+    justify-content: center;
+    align-items: center;  
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    /* margin:30px 0px 20px calc((100% - 1300px) * 0.5); */
+    /* position: relative; */
+    font-size: 26px;
+}
+.textVendida h3{
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+    .slidesMini ul{
+        display: flex;
+        width: 400%;
+        height: 100%;
+        animation: cambio 20s infinite alternate ease;
+        position: absolute;
+    }
+    .slidesMini li{
+        width: 100%;
+        height: 100%;
+        list-style: none;
+    }
+    .slidesMini img{
+        cursor: pointer;
+        transition: all 0.5s ease;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .slidesMini img:hover{
+        transform: scale(0.9);
+    }
+/* Slider de imagenes menores para mostrario Termina*/
+
+/* section de categorias comienzo */
+
+.sectionCategoria{
+        /* background: #235379; */
+        display: flex;
+        /* position: static; */
+    }
+    .contenedorSection{
+        display: flex;
+        width: 1300px;
+        margin:50px 0px 50px calc((100% - 1300px) * 0.5);
+        padding: 20px 90px 20px 90px;
+        /* padding: 50px; */
+        /* background: yellow; */
+    }
+    .categoria{
+        /* position: static; */
+        display: flex;
+        flex: 1 1 100%;
+        /* background: blue; */
+        flex-flow: row wrap;
+        justify-content: center;
+        /* position: relative; */
+    }
+        .articulos{
+            /* background: green; */
+            background: #F5F5F5;
+            padding: 0px 5px 20px 5px;
+            flex: 1 1 25%;
+            /* flex: 1 1 35%; */
+            text-align: center;
+            margin: 10px 10px 10px 10px;
+        }
+        .contText{
+            display: inline-block;
+        }
+        .articulos h3{
+            position: relative;
+            bottom: 0px;
+            left: 0px;
+            font-size: 12px;
+            color: grey;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 5px 0;
+            display: inline-block;
+            border-bottom: 0px solid;
+            border-color: rgba(242, 164, 178);
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+            border-width: 0 0 1px;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+.articulos h3:hover{
+    /* transform: scale(0.9); */
+    border-width: 0 0 1px;
+    padding: 5px 5px;
+    border-color: rgba(148, 1, 11);
+    color: black;
+}
+        .articulos img{
+            width: 100%;
+        }
+    .panelRight{
+        /* background: blueviolet; */
+        flex: 0 1 65%;
+        display: flex;
+        align-items: center;
+        padding-right: 20px;
+        /* margin: 10px 0px 10px 50px; */
+    }
+    .textFrase{
+        font-style: oblique;
+        font-size: 36px;
+    }
+    /* section de categorias Termina */
+
+
+
+/* seccion de servicios empieza */
+
+.sectionServicios{
+    background: rgba(245, 245, 245, 0.5);
+    display: flex;
+    /* position: static; */
+}
+.servicios{
+    display: flex;
+    width: 1300px;
+    margin:50px 0px 50px calc((100% - 1300px) * 0.5);
+    padding: 20px 90px 20px 90px;
+    flex-flow: column;
+    /* background: red; */
+}
+.serviciosAr{
+    background: url(../imagenes/reloj1.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    display: flex;
+    flex-flow: row;
+    margin-top: 50px;
+    padding-left: 40%;
+}
+.serviciosAr2{
+    background: url(../imagenes/joyas1.jpg);
+    background-position: left;
+    background-attachment: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: gray;
+    display: flex;
+    flex-flow: row;
+    margin-top: 50px;
+    padding-left: 40%;
+}
+.ServicioText{
+    background: rgba(255, 255, 255, .5);
+    height: 500px;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    transform: skew();
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    /* padding: 20% 0px 0% 0%; */
+    /* color: rgba(171, 50, 57); */
+    /* border: 5px solid olivedrab; */
+}
+.servicios a{
+    font-size: 25px;
+    color: gray;
+    font-weight: bold;
+    padding-bottom: 10px;
+    transition: 3s;
+    border-bottom: 1px solid;
+    display: inline-block;
+    border-bottom: 0px solid;
+    border-color: rgba(242, 164, 178);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    border-width: 0 0 1px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.servicios p {
+    padding-top: 15px;
+    font-size: 17px;
+}
+.servicios a:hover{
+    /* transform: scale(0.9); */
+    border-width: 0 0 2px;
+    padding: 5px 30px;
+    border-color: rgba(148, 1, 11);
+    color: black;
+}
+
+/* seccion de servicios termina */
+
+/* KEYFRAMES animaciones para agregar en imagenes */
+
+/* animacion de imagenes de cambio escala */
+    @keyframes cambio{
+        0% {margin-left: 0;}
+        20% {margin-left: 0;}
+    
+        25% {margin-left: -100%;}
+        45% {margin-left: -100%;}
+    
+        50% {margin-left: -200%;}
+        70% {margin-left: -200%;}
+    
+        75%  {margin-left: -300%;}
+        100% {margin-left: -300%;}
+    }
+
+
+/* mmedia Querys propiedades de reponsive */
+
+@media screen and (max-width:1024px){
+     .marcoSlider{
+        margin:0px 0px 25px calc((100% - 100%) * 0.5);
+        width: 100%;
+        height: 397px;
+    } 
+    .marcoSliderMini{
+        margin:0px 0px 25px calc((100% - 95%) * 0.5);
+        width: 95%;
+        height: 100px;
+    }
+    /* .textVendida{
+        margin:0px 0px 0px calc((100% - 95%) * 0.5);
+        width: 95%;
+        height: 100px;
+    } */
+    .subMenu{
+        justify-content: center;
+        /* background-color: blue; */
+    }
+    .nav{
+        /* background-color: crimson; */
+    }
+    .nav a{
+        margin: 0 15px;
+        /* background-color: cyan; */
+    }
+    .social{   
+        /* background-color: coral; */
+    }
+    .paginacion li{
+        font-size: 10px;
+    }
+    .left, .right{
+        width: 90px;
+        font-size: 20px;
+    }
+}
+
+
