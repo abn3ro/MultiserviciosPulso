@@ -94,9 +94,15 @@ $(document).ready(function(){
 
 function accion(){
     console.log("Esta funcionando mi boton");
+    var menu  = document.getElementsByClassName('subMenu');
     var ancla = document.getElementsByClassName('nav-enlace');
     for (var i = 0; i < ancla.length; i++) {
         ancla[i].classList.toggle('desaparece');
     }
+    
+    for (var i = 0; i < menu.length; i++) {
+        menu[i].classList.toggle('menu2');
+    }
+    
 }
 

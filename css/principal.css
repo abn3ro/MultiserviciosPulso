@@ -57,19 +57,18 @@ a{
     }
 
     .nav-enlace{
-        /* display: flex; */
-        /* background: salmon; */
         color: #ffff;
-        /* padding: 10px 30px;  */
     }
 
     .nav-boton{
-        /* background: salmon; */
-        /* color: #ffff; */
-        padding: 10px 0px;
-        /* border: 2px solid #fff; */
+        justify-content: left;
+        padding: 5px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
         display: none;
     }
+    
     /* ---------------------------------- */
     .logo{
         flex: 1 1 auto;
@@ -629,37 +628,54 @@ height: 100%;
 
 @media screen and (max-width:699px){
     .subMenu{
-        margin: 10px;
-        height: 80px;
+        position: relative;
+        height: 230px;
         display: flex;
         flex-flow: column;
-        background-color: rgba(0, 0, 0, .8);
+        /* background-color: rgba(0, 0, 0, .8); */
+        justify-content: start;
+        transition: all .5s ease;
     }
     .nav {
-        background-color: rgba(0, 0, 0, .3);
+        padding: 10px 0px 10px 0px;
+        /* background-color: red; */
         flex-flow: column;
-        width: 100%;
-        position: relative;
-    }
-    .nav-enlace{
-        margin: 0px;
-        padding: 0px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        width: 80%;
+        /* position: relative; */
         
     }
+    .nav-enlace{
+        margin: 200px;
+        padding: 10px;
+        display: flex;
+        background-color: rgba(255, 255, 255, .1);
+        border-radius: 15px;
+        flex-direction: column;   
+        border-bottom: 1px solid;
+        transition: all 4s linear;
+    }
+    .nav-enlace:hover{
+        transform: scale(1.1);
+        transition: all 1.5s linear;
+        /* margin: 5px; */
+    }
     .nav-boton{
-        display: inline-block;
-        margin: 10px;
+        width: 100%;
+        display: flex;
     }
     .desaparece{
         display: none;
+        /* transform: scale(0.0); */
+        transition: all 1.5s linear;
+    }
+    .menu2{
+        height: 80px;
+        transition: all .5s linear;
     }
     .marcoSlider{
         height: 200px;
     }
+
 }
 
 
