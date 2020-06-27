@@ -61,12 +61,17 @@ a{
     }
 
     .nav-boton{
+        color: rgba(0, 0, 0, .5);
+        font-size: 30px;
         justify-content: left;
         padding: 5px;
         margin-bottom: 10px;
         border: none;
         border-radius: 5px;
         display: none;
+    }
+    .nav-boton:active{
+        color: rgba(148, 1, 11);
     }
     
     /* ---------------------------------- */
@@ -629,12 +634,13 @@ height: 100%;
 @media screen and (max-width:699px){
     .subMenu{
         position: relative;
-        height: 230px;
+        height: 250px;
         display: flex;
         flex-flow: column;
         /* background-color: rgba(0, 0, 0, .8); */
         justify-content: start;
         transition: all .5s ease;
+        margin-top: 0px;
     }
     .nav {
         padding: 10px 0px 10px 0px;
@@ -669,7 +675,7 @@ height: 100%;
         transition: all 1.5s linear;
     }
     .menu2{
-        height: 80px;
+        height: 95px;
         transition: all .5s linear;
     }
     .marcoSlider{
