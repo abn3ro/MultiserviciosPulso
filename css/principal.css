@@ -608,6 +608,9 @@ height: 100%;
     .textFrase{
         font-size: 25px;
     }
+    .sectionServicios{
+        background: none;
+    }
     .servicios{
         padding: 0px;
     }
@@ -692,7 +695,11 @@ height: 100%;
 
 @media screen and (max-width:548px){
     .textFrase{
-        font-size: 13.5px;
+        font-size: 16px;
+        text-align: center;
+    }
+    .textVendida{
+        font-size: 16px;
     }
     .contenedorSection{
         padding: 20px 0px 0px 0px;
