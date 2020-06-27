@@ -689,3 +689,18 @@ height: 100%;
         width: 400px;
     }
 }
+
+@media screen and (max-width:548px){
+    .textFrase{
+        font-size: 13px;
+    }
+    .contenedorSection{
+        padding: 0px;
+    }
+    .categoria{
+        flex-direction: row wrap;
+    }
+    .articulos{
+        margin: 25px;
+    }
+}
