@@ -692,15 +692,20 @@ height: 100%;
 
 @media screen and (max-width:548px){
     .textFrase{
-        font-size: 13px;
+        font-size: 13.5px;
     }
     .contenedorSection{
-        padding: 0px;
+        padding: 20px 0px 0px 0px;
     }
     .categoria{
         flex-direction: row wrap;
     }
     .articulos{
         margin: 25px;
+    }
+}
+@media screen and (max-width:450px){
+    .marcoSlider{
+        height: 200px;
     }
 }
