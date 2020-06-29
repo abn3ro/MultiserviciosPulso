@@ -22,8 +22,6 @@
     float: right;
 }
 .social div{
-    height: 50px;
-    font-size: 16px;
     padding: 15px 5px;
 }
 .social a{
@@ -75,6 +73,7 @@ header label{
     }
     .off{
         font-size: 10px;
+        margin-right: 5px;
     }
     header label{
         display: none;
