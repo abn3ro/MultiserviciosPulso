@@ -420,6 +420,19 @@ height: 100%;
 .informacion p {
     line-height: 1.8em;
 }
+.pieBoton{
+    margin-top: 25px ;
+    padding: 14px;
+    color: rgba(255, 255, 255, 0.7);   
+    border: 1px solid rgba(255, 255, 255, 0.7);   
+    transition: all .5s ease-in-out;
+}
+.pieBoton:hover{
+    color: white;
+    background: rgba(255, 255, 255, 0.1);   
+    border: 2px solid rgba(255, 255, 255, 0);   
+}
+
 .linea{
     border-bottom: 2px solid rgba(195, 157, 99);
     padding: 0px 40px;
@@ -443,6 +456,16 @@ height: 100%;
     justify-content: center;
     color: white;
     line-height: 1em;
+}
+.pieSocial{
+    display: flex;
+}
+.pieSocial div{
+    font-size: 25px;
+    margin: 10px;
+}
+.pieSocial a{
+    color: rgba(255, 255, 255, 0.7); 
 }
 /* footer informacion de estableciminento termina */
 
