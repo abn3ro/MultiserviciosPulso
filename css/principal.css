@@ -34,7 +34,7 @@ header{
     z-index: 100;
 }
 header:hover{
-    background: linear-gradient(to bottom,#25211e 0,rgba(0,0,0) 100%);
+    background: linear-gradient(to bottom,#25211e 0,rgba(0,0,0,0.8) 100%);
 }
 .contenedor{
     width: 98%;
@@ -51,7 +51,6 @@ header h1{
 }
 header .contenedor{
 display: table;
-/* flex-flow: row ; */
 }
 /* los demas estilos de menu estan importados desde el doc menu.css */
 /* aqui termina los diseños de la cabecera  */
@@ -230,20 +229,15 @@ height: 100%;
         padding: 20px 90px 20px 90px;
     }
     .categoria{
-        /* position: static; */
         display: flex;
         flex: 1 1 100%;
-        /* background: blue; */
         flex-flow: row wrap;
         justify-content: center;
-        /* position: relative; */
     }
         .articulos{
-            /* background: green; */
             background: #F5F5F5;
             padding: 0px 5px 20px 5px;
             flex: 1 1 25%;
-            /* flex: 1 1 35%; */
             text-align: center;
             margin: 10px 10px 10px 10px;
         }
@@ -263,13 +257,10 @@ height: 100%;
             border-bottom: 0px solid;
             border-color: rgba(242, 164, 178);
             transition: 0.5s;
-            /* -webkit-transition: 0.5s; */
             border-width: 0 0 1px;
-            /* box-sizing: border-box; */
             cursor: pointer;
         }
 .articulos h3:hover{
-    /* transform: scale(0.9); */
     border-width: 0 0 1px;
     padding: 5px 5px;
     border-color: rgba(148, 1, 11);
@@ -548,6 +539,9 @@ height: 100%;
     }
     header{
         height: 50px;
+     }
+     .left, .right{
+         display: none;
      }
 }
 
