@@ -416,7 +416,7 @@ height: 100%;
     padding: 14px;
     color: rgba(255, 255, 255, 0.7);   
     border: 1px solid rgba(255, 255, 255, 0.7);   
-    transition: all .5s ease-in-out;
+    transition: .1s;
 }
 .pieBoton:hover{
     color: white;
@@ -429,14 +429,11 @@ height: 100%;
     padding: 0px 40px;
     padding-bottom: 20px;
 }
-.pieSocial{
-    padding-top: 20px;
-}
+
 .piePagina{
     background-color: rgba(0, 0, 0, .8);
     display: flex;
     justify-content: center;
-    /* align-content: center; */
 }
 .piecuadro{
     height: 150px; 
@@ -449,6 +446,7 @@ height: 100%;
     line-height: 1em;
 }
 .pieSocial{
+    padding-top: 20px;
     display: flex;
 }
 .pieSocial div{
@@ -457,6 +455,9 @@ height: 100%;
 }
 .pieSocial a{
     color: rgba(255, 255, 255, 0.7); 
+}
+.pieSocial a:hover{
+    color: rgba(255, 255, 255); 
 }
 /* footer informacion de estableciminento termina */
 
