@@ -26,16 +26,24 @@ a{
 header{
     width: 100%;
     height: 50px;
-    background: #333;
+    background: linear-gradient(to bottom,#25211e 0,rgba(37,33,30,-0.9) 100%);
     color: #fff;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
 }
+header:hover{
+    background: linear-gradient(to bottom,#25211e 0,rgba(0,0,0) 100%);
+}
 .contenedor{
     width: 98%;
     margin: auto;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 header h1{
     float: left;
@@ -48,7 +56,7 @@ header .contenedor{
 
 /* Comienzo de la parte de section */
 .section{
-    margin-top: 50px;
+    /* margin-top: 50px; */
     /* background: #000; */
     display: inline-block;
     flex: 0  0 auto;
@@ -58,7 +66,7 @@ header .contenedor{
 /* ----------Animaciones y propiedades de imagenes slider------- */
 .marcoSlider{
     /* background: #235379; */
-    margin:20px 0px 25px calc((100% - 1349px) * 0.5);
+    margin:0px 0px 25px calc((100% - 1349px) * 0.5);
     display: flex;
     flex: 0 0 auto;
     width: 1349px;
@@ -509,6 +517,9 @@ height: 100%;
         display: flex;
         flex-flow: column;
         width: 400px;
+    }
+    .off{
+        display: none;
     }
 }
 

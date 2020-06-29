@@ -1,9 +1,31 @@
 #menu-bar{
     display: none;
 }
-
-header label{
+.logo{
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.social{
+    position: static;
+    width: auto;
+    height: 100%;
     float: right;
+    display: flex;
+}
+.social div{
+    height: 50px;
+    font-size: 18px;
+    padding: 15px;
+}
+.social a{
+    color: white;
+}
+header label{
+    float: left;
     font-size: 28px;
     margin: 6px 0px;
 }
@@ -32,17 +54,22 @@ header label{
     transform: translateX(0%);
 }
 
-@media (min-width: 1024px){
+@media (min-width: 840px){
     .menu{
         position: static;
         width: auto;
         height: auto;
         transform: translateX(0%);
-        float: right;
+        float: left;
         display: flex;
+        background:none;
     }
     .menu a{
         border: none;
+        font-size: 10px;
+    }
+    .off{
+        font-size: 10px;
     }
     header label{
         display: none;
