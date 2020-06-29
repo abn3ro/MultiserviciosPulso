@@ -2,27 +2,27 @@
     display: none;
 }
 .logo{
-    top: 0px;
+    top: -10px;
     position: absolute;
     justify-content: center;
     display: flex;
     width: 100%;
-    height: 10px;
+    height: 5px;
     align-items: center;
 }
 .logo h1{
-    padding-top: 30px;
+    padding-top: 60px;
 }
 .social{
     position: static;
     justify-content: flex-end;
     display: flex;
     width: auto;
-    height: 100%;
+    height: 80px;
     float: right;
 }
 .social div{
-    padding: 15px 5px;
+    padding: 30% 5px;
 }
 .social a{
     color: white;
@@ -43,8 +43,10 @@ header label{
     transform: translateX(-100%) ;
 }
 .menu a{
+    text-align: center;
+    justify-content: center;
     display: block;
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.7);   
     height: 50px;
     padding: 15px;   
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);   
@@ -68,14 +70,28 @@ header label{
         background:none;
     }
     .menu a{
+        padding-top: 8%;
         border: none;
         font-size: 10px;
+        height: 80px;
     }
     .off{
         font-size: 10px;
-        margin-right: 5px;
+        margin-right: 15px;
+        padding-bottom: 15px;
     }
     header label{
         display: none;
+    }
+    .logo{
+        top: 0px;
+        height: 10px;
+    }
+    .social{
+        height: 80px;
+        float: right;
+    }
+    .social div{
+        padding: 10% 13px;
     }
 }
