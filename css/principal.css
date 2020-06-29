@@ -1,3 +1,5 @@
+@import url(menu.css);
+
 *{
     margin: 0px;
     padding: 0px;
@@ -5,10 +7,7 @@
 }
 
 body{
-    /* font-family: 'Montserrat', sans-serif; */
-    /* font-family: 'MedievalSharp', cursive; */
     font-family: 'Comfortaa', cursive;
-    /* padding-top: 40px; */
     transition: padding-top 0.5s ease;
 }
 a{
@@ -24,129 +23,32 @@ a{
 }
 
 /* encabezado de pagina web */
-.header{
-    /* background: url(../imagenes/1.jpg); */
-    /* padding: 20px; */
-    background: #ffffff ;  
-    background-position: center;
-    background-attachment:fixed ;
-    background-size: cover;
-    display: flex;
-    flex-flow: column nowrap;
-}   
-    .Hlogo{
-        /* background: rgba(0, 0, 0, .3); color de fondo con transparencia */
-        display: flex;
-        flex-flow: row nowrap;
-        height: 100px;
-        align-items: center;
-        text-align: center;
-       
-    }
-    .subMenu{
-        /* background: black; */
-        display: flex;
-        flex-flow: row wrap;
-        height: 55px;
-        align-items: center;
-        align-content: center;
-        text-align: center;
-        margin-top: 20px;
-        padding: 0px auto;
-        justify-content: center;
-    }
-
-    .nav-enlace{
-        color: #ffff;
-    }
-
-    .nav-boton{
-        color: rgba(0, 0, 0, .5);
-        background: rgba(0, 0, 0, .05);
-        font-size: 30px;
-        justify-content: left;
-        padding: 5px;
-        margin-bottom: 10px;
-        border: none;
-        border-radius: 5px;
-        display: none;
-    }
-    .nav-boton:active{
-        color: rgba(148, 1, 11);
-    }
-    
-    /* ---------------------------------- */
-    .logo{
-        flex: 1 1 auto;
-        padding-bottom: 10px;
-        /* transition: all 0.5s ease; */
-    }   
-    
-    .logo img{
-        height: 60px;
-        transition: all 0.3s ease;
-    }
-    .logo img:hover{
-        color: #235379;
-    }
-
-/* Efecto de desaparacion en imagen logo */
-body.sticky-header{
-    /* padding-top: 40px ;     */
+header{
+    width: 100%;
+    height: 50px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
-body.sticky-header .Hlogo{
-    /* height: 30px; */
-    background: #ffffff;
-    
+.contenedor{
+    width: 98%;
+    margin: auto;
 }
-body.sticky-header .logo img{
-    transform: scale(0.0);
- }
-    /* ------------------------------------- */
-        .social{
-            /* background: #000000; */
-            flex: 0 0 auto;
-            display: flex;
-            align-items: center;
-            padding: 0 40px;
-            /* border-right: 1px solid rgba(0, 0, 0, .1); */
-        }
-            .social a{
-                font-size: 18px;
-                color: gray;
-                padding: 0 10px;
-                transition: color 1.5s ease 0s;
-            }
-            .social a:hover{
-                color: rgba(148, 1, 11);
-            }
-
-    /* encabezado de menu */
-    /* ------------------------------------- */
-        .nav{
-            flex: 0 0 auto;
-            align-items: center;
-            /* background: #000; */
-        }
-            .nav a{
-                color: grey;
-                font-size: 13px;
-                text-transform: uppercase;
-                /* position: static; */
-                padding-bottom: 5px;
-                margin: 0 40px;
-                letter-spacing: 1px;
-                transition:  color 0.4s ease 0s;
-                font-weight: bold;
-            }
-            .nav a:hover{
-                color: rgba(148, 1, 11);
-                transition:  color 0.4s ease 0s;
-            }
+header h1{
+    float: left;
+}
+header .contenedor{
+    display: table;
+}
+/* los demas estilos de menu estan importados desde el doc menu.css */
 /* aqui termina los diseños de la cabecera  */
 
 /* Comienzo de la parte de section */
 .section{
+    margin-top: 50px;
     /* background: #000; */
     display: inline-block;
     flex: 0  0 auto;
@@ -316,8 +218,6 @@ height: 100%;
         width: 1349px;
         margin:50px 0px 50px calc((100% - 1349px) * 0.5);
         padding: 20px 90px 20px 90px;
-        /* padding: 50px; */
-        /* background: yellow; */
     }
     .categoria{
         /* position: static; */
@@ -353,9 +253,9 @@ height: 100%;
             border-bottom: 0px solid;
             border-color: rgba(242, 164, 178);
             transition: 0.5s;
-            -webkit-transition: 0.5s;
+            /* -webkit-transition: 0.5s; */
             border-width: 0 0 1px;
-            box-sizing: border-box;
+            /* box-sizing: border-box; */
             cursor: pointer;
         }
 .articulos h3:hover{
@@ -390,12 +290,12 @@ height: 100%;
     background: rgba(245, 245, 245, 0.5);
     display: flex;
     /* position: static; */
+    margin-bottom: 50px;
 }
 .servicios{
     display: flex;
     width: 1349px;
     margin:50px 0px 50px calc((100% - 1349px) * 0.5);
-    padding: 20px 90px 20px 90px;
     flex-flow: column;
     /* background: red; */
 }
@@ -408,7 +308,6 @@ height: 100%;
     background-color: white;
     display: flex;
     flex-flow: row;
-    margin-top: 50px;
     padding-left: 40%;
 }
 .serviciosAr2{
@@ -424,18 +323,15 @@ height: 100%;
     padding-left: 40%;
 }
 .ServicioText{
+    right: 0px;
     background: rgba(255, 255, 255, .5);
     height: 500px;
     display: flex;
     flex-flow: column;
     text-align: center;
-    transform: skew();
     justify-content: center;
     padding: 20px;
     align-items: center;
-    /* padding: 20% 0px 0% 0%; */
-    /* color: rgba(171, 50, 57); */
-    /* border: 5px solid olivedrab; */
 }
 .servicios a{
     font-size: 25px;
@@ -571,25 +467,6 @@ height: 100%;
         width: 100%;
         height: 100px;
     }
-    /* .textVendida{
-        margin:0px 0px 0px calc((100% - 95%) * 0.5);
-        width: 95%;
-        height: 100px;
-    } */
-    .subMenu{
-        justify-content: center;
-        /* background-color: blue; */
-    }
-    .nav{
-        /* background-color: crimson; */
-    }
-    .nav a{
-        margin: 0 15px;
-        /* background-color: cyan; */
-    }
-    .social{   
-        /* background-color: coral; */
-    }
     .paginacion li{
         font-size: 10px;
     }
@@ -613,6 +490,7 @@ height: 100%;
     }
     .servicios{
         padding: 0px;
+        margin: auto;
     }
     .colorPie{
         padding: 80px 10px 80px 10px;
@@ -635,50 +513,6 @@ height: 100%;
 }
 
 @media screen and (max-width:699px){
-    .subMenu{
-        position: relative;
-        height: 250px;
-        display: flex;
-        flex-flow: column;
-        /* background-color: rgba(0, 0, 0, .8); */
-        justify-content: start;
-        transition: all .5s ease;
-        margin-top: 0px;
-    }
-    .nav {
-        padding: 10px 0px 10px 0px;
-        /* background-color: red; */
-        flex-flow: column;
-        width: 90%;
-        /* position: relative; */  
-    }
-    .nav-enlace{
-        margin: 200px;
-        padding: 10px;
-        display: flex;
-        border-radius: 15px;
-        flex-direction: column;   
-        border-bottom: 1px solid;
-        transition: all 4s linear;
-    }
-    .nav-enlace:hover{
-        transform: scale(1.1);
-        transition: all 1.5s linear;
-        /* margin: 5px; */
-    }
-    .nav-boton{
-        width: 100%;
-        display: flex;
-    }
-    .desaparece{
-        display: none;
-        /* transform: scale(0.0); */
-        transition: all 1.5s linear;
-    }
-    .menu2{
-        height: 95px;
-        transition: all .5s linear;
-    }
     .marcoSlider{
         height: 350px;
     }
@@ -709,6 +543,10 @@ height: 100%;
     }
     .articulos{
         margin: 25px;
+    }
+    .serviciosAr, .serviciosAr2{
+        padding: 0px;
+        background-position: cover;
     }
 }
 @media screen and (max-width:450px){
