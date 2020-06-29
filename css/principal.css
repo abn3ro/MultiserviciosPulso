@@ -42,6 +42,7 @@ header:hover{
     display: flex;
     align-content: center;
     align-items: center;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -49,7 +50,8 @@ header h1{
     float: left;
 }
 header .contenedor{
-    display: table;
+display: table;
+/* flex-flow: row ; */
 }
 /* los demas estilos de menu estan importados desde el doc menu.css */
 /* aqui termina los diseños de la cabecera  */
