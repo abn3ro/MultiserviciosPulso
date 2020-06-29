@@ -24,16 +24,25 @@
     float: right;
 }
 .social div{
-    padding: 15% 10px;
+    padding: 15% 5px;
 }
 .social a{
     color: rgba(255, 255, 255, 0.7);   
 }
+header i{
+    font-size: 19px;
+}
 header label{
     float: left;
-    font-size: 28px;
+    padding-top:10px ;
+    padding-left:10px ;
+    font-size: 10px;
     color: rgba(255, 255, 255, 0.7);
     margin: 6px 0px;
+    height: 10px;
+}
+.contenedor span{
+    margin: 10px;
 }
 .menu{
     position: absolute;
