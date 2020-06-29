@@ -1,3 +1,8 @@
+.sticky-header header{
+    background: linear-gradient(to bottom,#25211e 0,rgba(0,0,0,0.8) 100%);
+    transition: all 3s ;
+}
+
 #menu-bar{
     display: none;
 }
