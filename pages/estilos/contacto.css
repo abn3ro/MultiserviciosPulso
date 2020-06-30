@@ -10,7 +10,7 @@
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    color: #ffffff;
+    color: #000;
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
 }
@@ -64,5 +64,5 @@
    }
    #banner p{
     font-size: 30px;
-}
+    }
 }
